@@ -1,10 +1,22 @@
 using System;
+using System.IO;
 
 
-class Journal
+public class Journal
 {
-    public List<Entry> _entry = new List<Entry>();
 
+    string fileName = "myJournal.txt";
     
+
+    public List<string> todaysEntries = new List<string>();
+    
+    public void Display()
+    {
+
+        foreach (String entry in todaysEntries)
+        {
+            Console.WriteLine(entry);
+        }
+    }
 
 }
