@@ -29,8 +29,8 @@ class Program
         Console.WriteLine("Please select one of the following options:");
         Console.WriteLine("1. Write");
         Console.WriteLine("2. Display");
-        Console.WriteLine("3. Load");
-        Console.WriteLine("4. Save");
+        Console.WriteLine("3. Save");
+        Console.WriteLine("4. Load");
         Console.WriteLine("5. Quit");
         Console.Write("What would you like to do? ");
         displayInput = Console.ReadLine();
@@ -47,6 +47,14 @@ class Program
         else if (displayInput == "2")
         {
             myJournal.Display();
+        }
+        else if (displayInput == "3") 
+        {
+            myJournal.saveJournal();
+        }
+        else if (displayInput == "4")
+        {
+            myJournal.loadJournal();
         }
 
         }while (true);
