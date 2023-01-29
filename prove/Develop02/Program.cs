@@ -56,6 +56,10 @@ class Program
         {
             myJournal.loadJournal();
         }
+        else if (displayInput == "5");
+        {
+            break;
+        }
 
         }while (true);
 

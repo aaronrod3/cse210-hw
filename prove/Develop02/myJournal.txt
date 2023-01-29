@@ -1,1 +1,4 @@
-System.Collections.Generic.List`1[System.String]
+Date: 28-01-2023 - Where did you go today? 
+Ellis' house
+Date: 28-01-2023 - Where did you go today? 
+same thing
