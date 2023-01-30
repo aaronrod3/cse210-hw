@@ -61,8 +61,6 @@ class Program
             break;
         }
 
-        }while (true);
-
-        
+        }while (true);        
     }
 }
