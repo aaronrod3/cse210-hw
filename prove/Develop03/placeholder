@@ -1,0 +1,16 @@
+// this is code that works
+
+
+// steps:
+// take the reference and content
+// keep reference and content separate
+// make content into list so that it can be indexed
+// switch random word with _____
+// return a string or list
+
+
+
+
+// if user types 'enter'
+// if(userInput.Key == ConsoleKey.Enter)
+
