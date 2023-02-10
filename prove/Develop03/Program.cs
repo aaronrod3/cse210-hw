@@ -10,15 +10,38 @@ class Program
         Display myDisplay = new Display();
 
             //get scripture
-        //string scriptRef = myScripture.getScriptureRef();
+        string scriptRef = myScripture.getScriptureRef();
         string scriptText = myScripture.getScriptureText();
             //make scripture words into list
-        myScripture._words = scriptText.Split(' ').ToList();
-            //display Ref and Scripture
-        // myDisplay.display(scriptRef, myScripture._words);
+        myScripture._words = scriptText.Split(' ').ToList();    
+            // get prompt
+        string prompt = myPrompt.prompt();
+    
+        //clear screen and display scripture
+        myDisplay.display(scriptRef, myScripture._words);
+        //prompt to enter or quit
+        
 
-            //get the prompt
-        // string prompt = myPrompt.prompt();
-        myScripture.randomWord();
+        do
+        {
+            //prompt to enter or quit
+            Console.WriteLine(prompt);
+            var userInput = Console.ReadKey();
+
+            if (userInput.Key == ConsoleKey.Enter)
+            {
+            // hide words 
+            myScripture.randomWord();
+            myScripture.randomWord();
+            myScripture.randomWord();
+            //re display
+            myDisplay.display(scriptRef, myScripture._words);
+            }
+            else 
+            {
+                break;
+            }
+            
+        } while (true);
     }
 }

@@ -3,7 +3,7 @@ using System;
 class Display
 {
 
-    public void scriptureList(List<string> text)
+    private void scriptureList(List<string> text)
     {
         foreach (var word in text)
         {
@@ -18,5 +18,6 @@ class Display
         Console.WriteLine($"{reference}");
         scriptureList(text);
     }
+    
 
 }
