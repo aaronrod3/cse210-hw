@@ -2,7 +2,7 @@ using System;
 
 
 
-public class ListingActivity
+public class ListingActivity : Activity
 {
     private List<string> _prompts = new List<string>() {
         "Who are people that you appreciate?",

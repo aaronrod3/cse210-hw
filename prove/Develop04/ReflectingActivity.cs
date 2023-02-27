@@ -2,7 +2,7 @@ using System;
 
 
 
-public class ReflectingActivity
+public class ReflectingActivity : Activity
 {
     Activity activity2 = new Activity();
 
